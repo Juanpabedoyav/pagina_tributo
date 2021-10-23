@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --color-fondo: #c3cedf;
+    --title-color: #49576c;
+    --color-text:#292b2f;
+
+}
+
+#main {
+    background-color: var(--color-fondo);
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+#title {
+    text-align: center;
+    padding: 50px 0;
+    font-size: 4rem;
+    color: var(--title-color);
+    /* border: 2px solid red; */
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+    max-width: 100%;
+    border-radius: 15px;
+    height: calc(100% - 60px);
+}
+
+#img-div {
+    margin: 20px auto;
+    width: 90%;
+    height: 550px;
+    background-color: #dae0eb;
+    border-radius: 20px;
+    /* border: 2px solid black; */
+}
+
+#img-caption {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 800;
+    font-style: italic;
+    box-shadow: 0px 3px 2px 0px rgb(0, 0, 0, 0.2);
+    border-radius: 0px 0px 8px 8px;
+    background: linear-gradient(35deg, #c3cedf, #49576c5e);
+
+}
+
+#tribute-info {
+    margin: 0 auto;
+    width: 50%;
+    height: 700px;
+    padding: 30px;
+    font-size: 1.2rem;
+    text-align: justify;
+    line-height: 2rem;
+    font-family: 'Roboto', sans-serif;
+    overflow: scroll;
+    color: var(--color-text);
+}
+.info{
+    font-weight: 500;
+     margin: 20px 0px;
+    }
+.caracteristicas{
+    padding: 10px 70px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 800;
+    font-style: italic;
+    box-shadow: 0px 3px 2px 0px rgb(0, 0, 0, 0.2);
+    border-radius: 0px 0px 8px 8px;
+    background: linear-gradient(35deg, #c3cedf, #49576c5e);
+    /* border: 2px solid red; */
+}
+#tribute-link{
+    display: block;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: right;
+    color:var(--title-color);
+}
+#tribute-link::before{
+ content: "👉";
+ margin-right: 10px;
+}
+
+@media (max-width: 550px) {
+#tribute-info {
+    overflow: scroll;
+
+    } 
+    .caracteristicas{
+        text-align: left;
+    }
+}
+@media (max-width: 780px and 800px) {
+    #tribute-info {
+        overflow: scroll;
+        height: 100%;
+    
+        } 
+    }
